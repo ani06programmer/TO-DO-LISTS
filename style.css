@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #ffe259, #ffa751);
+    color: white;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    min-height: 20vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.main-container{
+    /* position: relative; */
+    padding: 5px;
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: auto;
+    min-height: 400px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    /* display: block; */
+    
+   
+    
+    
+}
+#form-container{
+    /* margin-bottom: auto; */
+    width: 95%;
+    margin-left: 3%;
+    /* margin: auto; */
+   
+    /* border: 1px solid; */
+}
+.main-container div form{
+    width: 95%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:center ;
+    /* align-items: center; */
+    /* border: 1px solid; */
+    /* padding: 10px; */
+    /* box-shadow: 2px 3px 3px 3px slategray; */
+} 
+
+
+
+form input, form button{
+    padding: 0.7rem;
+    
+    
+    font-size: 1.2rem;
+    border: none;
+    
+    background-color: white;
+    outline: none;
+
+}
+form input{
+    width:90%;
+    border-radius: 5px 0px 0px 5px;
+}
+form button{
+    width: 50px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+form button{
+    color:#fda955;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    color:white;
+    background: #e77b0f;
+    
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    /* border: 1px solid black; */
+    width: 95%;
+    margin-left: 0.5%;
+    /* margin: auto; */
+    /* margin-top: -50px; */
+}
+
+.list-items{
+    width: 95%;
+    margin-left: -40px;
+    list-style: none;
+}
+.todo{
+    position: relative;
+    border-radius: 5px ;
+    margin: 0.5rem;
+    background:white;
+    color: black;
+    font-size: 1.2rem;
+    /* border-radius: 5px; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.todo li{
+    display: flex;
+    /* margin-left: auto; */
+    /* flex-wrap: wrap; */
+    flex: 1;
+    /* height: 25px; */
+    min-width: 30%;
+    /* overflow: scroll; */
+    /* overflow-wrap: word-break; */
+    padding: 10px 8px;
+    /* overflow: scroll; */
+
+}
+.complete-btn,.delete-btn{
+    /* position: absolute; */
+    background-color: #ff6f47;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    cursor: pointer;
+    /* height: 100%; */
+    transition: all 0.3s ease;
+    /* right: 40px; */
+    
+    
+}
+.delete-btn{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.complete-btn{
+    background-color: rgb(33, 209, 33);
+}
+.complete-btn:hover{
+    background-color: rgb(29, 139, 29);
+}
+.delete-btn:hover{
+    background-color:#c94723 ;
+}
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+select{
+    /* -webkit-appearance: none; */
+    /* appearance: none; */
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    
+}
+.select{
+    margin: 1rem;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+select{
+    color: #ff6f47;
+    background-color: white;
+    width: 6rem;
+    
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px)
+{
+   .main-container{
+       width: 100%;
+   }
+   form input, form button{
+       font-size: 0.9rem;
+   }
+   .todo{
+       font-size: 0.9rem;
+   }
+   .todo li{
+       padding: 5px 10px;
+   }
+  
+}
+@media screen and (min-width:900px)
+{
+    .main-container{
+        width: 60%;
+    }
+    form input, form button{
+        font-size: 0.9rem;
+    }
+    .todo{
+        font-size: 1rem;
+    }
+    .todo li{
+        padding: 5px 10px;
+    }
+    
+}
+
+@media screen and (min-width:1300px)
+{
+    .main-container{
+        width: 50%;
+    }
+    .todo{
+        font-size: 1rem;
+    }
+    .todo li{
+        padding: 5px 10px;
+    }
+    
+}
